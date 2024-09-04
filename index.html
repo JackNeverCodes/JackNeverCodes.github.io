@@ -4,7 +4,7 @@
     <title>Universe Something-or-other</title>
   </head>
   <body style="background-color: green">
-    <h1 style="color:red;">BOO!</h1>
+    <h1 style="color:red">BOO!</h1>
     <h2>I bet I scared you</h2>
 
     <a href="https://jacknevercodes.github.io/about">Who's this guy?</a>
@@ -14,12 +14,31 @@
 
     <p>This is the first ever webpage I've ever made, for real. I mean it this time. Probably.</p>
 
-    <p>Over the course of probably 3 years (if Mr. McGee doesn't LEAVE US!!!) this webpage will become the very first imprint I have ever made in my journey into becoming the greatest programmer ever.</p>
+    <p id="the course">Over the course of probably 3 years (if Mr. McGee doesn't LEAVE US!!!) this webpage will become the very first imprint I have ever made in my journey into becoming the greatest programmer ever.</p>
 
-    <p>If you want to see my works, too bad. I don't know how to code that yet.</p>
+    <p id="works">If you want to see my works, too bad. I don't know how to code that yet.</p>
 
-    <p>Mandatory Joke: Why did the rat cross the road? To get to the KFC deep fryer on the other side 😋😋😋😋😋</p>
+    <p id="funny">Mandatory Joke: Why did the rat cross the road? To get to the KFC deep fryer on the other side 😋😋😋😋😋</p>
 
-    <p style="font-size: 25px;">Stay awesome,<br>Jack Skivar</p>
+    <button id="noLikey">I don't like this joke...</button>
+
+    <p style="font-size: 25px">Stay awesome,<br>Jack Skivar</p>
+
+    <script>
+      const a=document.getElementById("funny")
+      const b=document.getElementById("works")
+      const c=document.getElementById("the course")
+      const d=document.getElementById("noLikey")
+
+      setTimeout(()=> {
+        b.innerText="If you want to see my works, honestly I don't have any I'm proud of except that one YouTube video that like 750 people watched. That's kinda cool, but you'll never find it!"
+        c.innerText="Over the course of HOPEFULLY 3 years (because Mr. McGee would NEVER leave us!!) this webpage will still be goofy. But it's cool though... right?"
+      }, 5000 )
+
+      d.onclick = ()=> {
+        a.innerText="Mandatory Joke: What's a gangster kid's favorite story? None of them, they don't pay attention to English 😡😡😡😡😡"
+        d.innerText="This joke is SO funny, god I HATE gangster kids"
+      }
+    </script>
   </body>
 </html>
