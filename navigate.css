@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.w-dvw {
+    min-width: 100dvw;
+}
+
+.h-dvh {
+    min-height: 100dvh;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color:orangered;
+    color: yellow;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-size: 45px;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.nav-panel {
+    padding: 10px;
+    background-color: rgb(0, 255, 0);
+    width: 175px;
+    color: blue;
+    font-size: 20px;
+    font: "comic sans ms";
+    gap: 10px;
+}
+
+.nav-panel a:hover {
+    background-color: yellow;
+}
+
+.content {
+    padding: 30px;
+    font-size: 30px;
+    color: yellow;
+}
