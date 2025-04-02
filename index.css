@@ -40,11 +40,8 @@ body {
 }
 
 .pfp {
-    width: 200px;
-    border-radius: 100%;
-    border: solid;
-    border-width: 2em;
-    border-color: orangered;
+    width: 350px;
+    height: 200px;
 }
 
 .bg-primary {
@@ -77,4 +74,12 @@ body {
 
 .text-surface {
     color: var(--theme-surface);
+}
+
+.w-dvw {
+    width: 100dvw;
+}
+
+.h-dvh {
+    height: 100dvh;
 }

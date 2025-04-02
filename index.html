@@ -5,12 +5,60 @@
         <title>SHINY Jakay Website</title>
     </head>
     <body>
-        <div class="flex-col justify-center align-center">
+        <div class="flex-col justify-center align-center w-dvw h-dvh">
             <img src="pfpsigma.png" class="pfp">
-            <h1>JackNeverCodes</h1>
-            <a href="https://github.com/JackNeverCodes">Github</a>
-            <a href="starneverdoes@gmail.com">G-Mail</a>
-            <a href="https://www.youtube.com/@StarNeverDoes">YouTube</a>
+            <h1 class="text-primary">JackNeverCodes</h1>
+            <div class="nav">
+                <a href="https://github.com/JackNeverCodes">Github</a>
+                <a href="starneverdoes@gmail.com">G-Mail</a>
+                <a href="https://www.youtube.com/@StarNeverDoes">YouTube</a>
+            </div>
         </div>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Cedarville+Cursive&family=Noto+Sans+Egyptian+Hieroglyphs&family=Oooh+Baby&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&display=swap');
+            
+            h1 {
+                font-family: "Pixelify Sans";
+                font-size: 3rem;
+            }
+
+            .nav {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .nav a {
+                color: var(--theme-accent);
+                text-decoration: none;
+                padding: 10px;
+                font-size: 1.25rem;
+                font-family: cursive;
+                border-radius: 1rem;
+            }
+
+            .nav a:hover {
+                color: var(--theme-accent-content);
+                background: var(--theme-accent);
+            }
+        </style>
+
+        <script>
+            const pfp = document.querySelector(".pfp");
+
+            pfp.style.transformOrigin = "center"
+
+            let angle = 0;
+
+            function animate() {
+                angle += 1;
+
+                pfp.style.transform = `rotate(${angle}deg)`;
+
+                requestAnimationFrame(animate);
+            }
+
+            animate();
+        </script>
     </body>
 </html>
