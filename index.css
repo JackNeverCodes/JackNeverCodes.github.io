@@ -83,3 +83,11 @@ body {
 .h-dvh {
     height: 100dvh;
 }
+
+.about-text {
+    width: 750px;
+}
+
+.big-boy {
+    font-size: 90px;
+}

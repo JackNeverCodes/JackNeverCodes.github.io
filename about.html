@@ -2,17 +2,21 @@
 <html>
     <head>
         <link rel="stylesheet" href="./index.css">
-        <title>JackNeverMakesProfessionalWebsites</title>
+        <title>About JackNeverCodes</title>
     </head>
-    <body>
+    <body class="body">
         <div class="flex-col justify-center align-center w-dvw h-dvh">
-            <img src="pfpsigma.png" class="pfp">
-            <h1 class="text-primary">JackNeverCodes</h1>
+            <h1 class="text-primary">About JackNeverCodes</h1>
+            
+            <div class="justify-center about-text">
+                JackNeverCodes is a student at PTEC, and he currently takes Robotics. He would like to make a video game one day, so he is learning programming to prepare himself for that interest. JackNeverCodes also finds the possibility that his passions may not be immediately successful to be a potential outcome, and therefore he is using programming as a fallback in case he needs funding in the meantime.
+        
+                In his free time, JackNeverCodes likes playing grand strategy games, looking at awesome art, and being terrified of dragons.
+            </div>
+    
             <div class="nav">
-                <a href="./about.html">About Me</a>
-                <a href="https://github.com/JackNeverCodes">Github</a>
-                <a href="starneverdoes@gmail.com">G-Mail</a>
-                <a href="https://www.youtube.com/@StarNeverDoes">YouTube</a>
+                <a href="./index.html">Home</a>
+                <a href="./contact.html">Contact Me</a>
             </div>
         </div>
 
@@ -43,23 +47,5 @@
                 background: var(--theme-accent);
             }
         </style>
-
-        <script>
-            const pfp = document.querySelector(".pfp");
-
-            pfp.style.transformOrigin = "center"
-
-            let angle = 0;
-
-            function animate() {
-                angle += 1;
-
-                pfp.style.transform = `rotate(${angle}deg)`;
-
-                requestAnimationFrame(animate);
-            }
-
-            animate();
-        </script>
     </body>
 </html>
