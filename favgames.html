@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./index.css">
+        <title>StarNeverDoes' Favorite Games</title>
+    </head>
+    <body class="body">
+        <div class="flex-col h-dvh align-center">
+            <h1 class="text-primary">Star's Favorite Games</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Rank            </td>
+                        <td>Title           </td>
+                        <td>Studio/Developer</td>
+                        <td>Year            </td>
+                        <td>Metacritic Score</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Spore -->
+                    <tr>
+                        <td>1</td>
+                        <td><a href="https://store.steampowered.com/app/17390/SPORE">Spore</a></td>
+                        <td>Maxis Studios</td>
+                        <td>2008</td>
+                        <td>84</td>
+                    </tr>
+                    <!-- Crusader Kings III -->
+                    <tr>
+                        <td>2</td>
+                        <td><a href="https://store.steampowered.com/app/1158310/Crusader_Kings_III">Crusader Kings III</a></td>
+                        <td>Paradox Interactive</td>
+                        <td>2020</td>
+                        <td>91</td>
+                    </tr>
+                    <!-- Terraria -->
+                    <tr>
+                        <td>3</td>
+                        <td><a href="https://store.steampowered.com/app/105600/Terraria">Terraria</a></td>
+                        <td>Re-Logic</td>
+                        <td>2011</td>
+                        <td>81</td>
+                    </tr>
+                    <!-- Minecraft -->
+                    <tr>
+                        <td>4</td>
+                        <td><a href="https://www.minecraft.net/en-us">Minecraft</a></td>
+                        <td>Mojang Studios</td>
+                        <td>2009</td>
+                        <td>93</td>
+                    </tr>
+                    <!-- Roblox -->
+                    <tr>
+                        <td>5</td>
+                        <td><a href="https://www.roblox.com">Roblox</a></td>
+                        <td>Roblox Corporation</td>
+                        <td>2006</td>
+                        <td class="nop">N/A</td>
+                    </tr>
+                    <!-- Undertale -->
+                    <tr>
+                        <td>6</td>
+                        <td><a href="https://store.steampowered.com/app/391540/Undertale">Undertale</a></td>
+                        <td>Toby Fox</td>
+                        <td>2015</td>
+                        <td>92</td>
+                    </tr>
+                    <!-- Starbound -->
+                    <tr>
+                        <td>7</td>
+                        <td><a href="https://store.steampowered.com/app/211820/Starbound">Starbound</a></td>
+                        <td>Chucklefish Games</td>
+                        <td>2016</td>
+                        <td>81</td>
+                    </tr>
+                    <!-- Hearts of Iron 4 -->
+                    <tr>
+                        <td>8</td>
+                        <td><a href="https://store.steampowered.com/app/394360/Hearts_of_Iron_IV">Hearts of Iron 4</a></td>
+                        <td>Paradox Interactive</td>
+                        <td>2016</td>
+                        <td>83</td>
+                    </tr>
+                    <!-- Stellaris -->
+                    <tr>
+                        <td>9</td>
+                        <td><a href="https://store.steampowered.com/app/281990/Stellaris">Stellaris</a></td>
+                        <td>Paradox Interactive</td>
+                        <td>2016</td>
+                        <td>78</td>
+                    </tr>
+                    <!-- Cube World -->
+                    <tr>
+                        <td>10</td>
+                        <td><a href="https://store.steampowered.com/app/1128000/Cube_World/">Cube World</a></td>
+                        <td>Picroma</td>
+                        <td>2013</td>
+                        <td>48</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a class="linkyback" href="./index.html">Go Back</a>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Cedarville+Cursive&family=Noto+Sans+Egyptian+Hieroglyphs&family=Oooh+Baby&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&display=swap');
+            
+                h1 {
+                    font-family: "Pixelify Sans";
+                    font-size: 3rem;
+                    text-align: center;
+                }
+
+                table {
+                    width: 500px;
+                }
+
+                table thead {
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+                table tbody {
+                    text-align: center;
+                }
+
+                table tbody tr td:nth-child(1) {
+                    background: var(--theme-primary);
+                    color: var(--theme-primary-content);
+                    text-align: center;
+                    border-radius: 50%;
+                    width: 18px;
+                    height: 18px;
+                    display: inline-block;
+                    padding: 0.5rem;
+                }
+
+                table tbody tr td:nth-child(1):before {
+                    content:"#";
+                }
+
+                table tbody tr td:nth-child(2) {
+                    text-transform: uppercase;
+                }
+
+                table tbody tr td:nth-child(5):after {
+                    content:"%";
+                }
+
+                table tbody tr td:nth-child(5).nop:after {
+                    content:none;
+                }
+
+                .linkyback {
+                    color: var(--theme-primary);
+                }
+            </style>
+        </div>
+    </body>
+</html>
