@@ -4,18 +4,73 @@
         <link rel="stylesheet" href="./index.css">
         <title>bouncy bounce :]</title>
     </head>
-    <body class="h-dvh">
-        <div class="bouncetext">They call me the Bouncer.</div>
+    <body>
+        <div style="overflow: hidden; min-height: 100dvh; max-height: 100dvh; max-width: 100dvw; border: 1px solid black; position: relative;" id="container">
+            <div class="bouncytext" id="bouncingText">They call me the Bouncer.</div>
+        </div>
 
         <style>
 
-            .bouncetext {
+            .bouncytext {
                 text-align: center;
-                justify-content: center;
                 font-size: 50px;
                 color: orangered;
+                position: absolute;
+                min-width: fit-content;
+                text-wrap: nowrap;
             }
 
         </style>
+
+        <script>
+
+            const container = document.getElementById('container');
+            const bouncingText = document.getElementById('bouncingText');
+            let x = 0;
+            let y = 0;
+            let dx = 2;
+            let dy = 1;
+    
+            function animate() {
+            x += dx;
+            y += dy;
+
+            let bounds = container   .getBoundingClientRect()
+            let text   = bouncingText.getBoundingClientRect()
+    
+            //Collision detection
+            if (text.right > container.right || text.left < container.left) {
+                if(text.left < container.left) {
+                    x += container.left - text.left;
+                }
+
+                if(text.right > container.right) {
+                    x += container.right - text.right;
+                }
+
+                dx = -dx;
+            }
+
+            if (text.bottom > container.bottom || text.top < container.top) {
+                if(text.top < container.top) {
+                    y += container.top - text.top;
+                }
+
+                if(text.bottom > container.bottom) {
+                    y += container.bottom - text.bottom;
+                }
+
+                dy = -dy;
+            }
+    
+            bouncingText.style.left = x + 'px';
+            bouncingText.style.top = y + 'px';
+    
+            requestAnimationFrame(animate);
+            }
+    
+            animate();
+
+        </script>
     </body>
 </html>
