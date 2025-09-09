@@ -23,18 +23,27 @@ const MOCKING_PHRASES = [
 ]
 
 const RANDOM_PHRASES = [
-    "This is so sigma.",
-    "Skibidi skibidi Asher skibidi Asher skibidi Asher!",
-    "You're the most sigma Asher of all time.",
-    "Sigma sigma Asher sigma Asher sigma Asher!",
-    "You mog me Asher",
-    "You mog EVERYONE, Asher",
-    "Not even my creator's Blinding Cranium Flash could stop your sigma 👅👅",
-    "Mira wants you",
-    "56 missed calls from Mira",
-    "Baddie Mira wants you Asher",
-    "No more skibidi, I'll be Sigma, like I'm born to mew!",
-    "Fruit flies, fruit flies, fruit fruit flies flies flies",
+    () => "This is so sigma.",
+    () => "Skibidi skibidi Asher skibidi Asher skibidi Asher!",
+    () => "You're the most sigma Asher of all time.",
+    () => "Sigma sigma Asher sigma Asher sigma Asher!",
+    () => "You mog me Asher",
+    () => "You mog EVERYONE, Asher",
+    () => "Not even my creator's Blinding Cranium Flash could stop your sigma 👅👅",
+    () => "Mira wants you",
+    () => `${Math.floor(Math.random() * 1000) + 51} missed calls from Mira`,
+    () => "Baddie Mira wants you Asher",
+    () => "No more skibidi, I'll be Sigma, like I'm born to mew!",
+    () => "Fruit flies, fruit flies, fruit fruit flies flies flies",
+    () => "I'd be freaky FOR YOU but this is school so I can't lol have these emojis instead 👅👅👅👅👅👅👅👅",
+    () => "You could probably steal Zekey Pookie Bear from me 😔✊",
+    () => "NOT THE FRUIT FLIES!! NOOOOO! I NEED TO POUR VINEGAR ON EVERYONE'S PROJECTS NOO!!!!",
+    () => "skeebeeday asher sigma skoobadey...",
+    () => "I LOVE YOU HUNTRIX!! said Sigma Asher",
+    () => "Mira needs you Asher",
+    () => "Asher Mira is real and she is coming to your house",
+    () => "Hey Asher, what does 400 robux in 3 hours do? I must have forgotten",
+    () => "Asher the Jujutsu Shenanigans incident was never real.",
 ]
 
 function pick(list) {
@@ -48,7 +57,7 @@ function mockingPhrase(message) {
     else if(Math.random() > 0.75)
         return mock(message)
     else
-        return pick(RANDOM_PHRASES)
+        return pick(RANDOM_PHRASES)()
 }
 
 let userName = pick(DEFAULT_USER_NAMES);
