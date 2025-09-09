@@ -35,10 +35,6 @@ const RANDOM_PHRASES = [
     "Baddie Mira wants you Asher",
     "No more skibidi, I'll be Sigma, like I'm born to mew!",
     "Fruit flies, fruit flies, fruit fruit flies flies flies",
-    "I bet you'd want Mira to hunt you down, down, down 👅👅👅",
-    "You could play both sides with Zoe 👅",
-    "You'd probably play Pillar Chase if a baddie like Mira was in it 👅👅",
-    "One day you'll get that problematic goth dominant good girl baddie with anger issues who loves you very much 👅"
 ]
 
 function pick(list) {
